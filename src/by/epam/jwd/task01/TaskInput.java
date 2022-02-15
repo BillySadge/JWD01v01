@@ -22,12 +22,26 @@ public class TaskInput {
         return value;
     }
 
-    public double[] readThreeNums(){
+    public double readDoubleFromConsole(){
         Scanner scanner = new Scanner(System.in);
+        double value;
+        while (true) {
+            try {
+                value = scanner.nextDouble();
+                scanner.nextLine();
+                break;
+            } catch (InputMismatchException e) {
+                throw new RuntimeException("input time must be  Double");
+            }
+
+        }
+        return value;
+    }
+    public double[] readThreeNums(){
         double [] nums = new double[3];
-        nums[0] = scanner.nextDouble();
-        nums[1] = scanner.nextDouble();
-        nums[2] = scanner.nextDouble();
+        nums[0] = readDoubleFromConsole();
+        nums[1] = readDoubleFromConsole();
+        nums[2] = readDoubleFromConsole();
         return nums;
     }
 }
