@@ -7,13 +7,13 @@ public class Main {
         TaskOutput output = new TaskOutput();
 
         // task1
-        output.printBool(TaskLogic.compareNumsInNum(input.getIntFromConsole()));
+        output.printBool(TaskLogic.compareNumsInNum(input.readIntFromConsole()));
         // task 5
-        output.printThreeNums(TaskLogic.powDefineNums(input.getThreeNums()));
+        output.printThreeNums(TaskLogic.powDefineNums(input.readThreeNums()));
         // task 6
-        output.printDouble(TaskLogic.sumOfMinAndMax(input.getThreeNums()));
+        output.printDouble(TaskLogic.sumOfMinAndMax(input.readThreeNums()));
         // task10
-        output.printMatrix(TaskLogic.fillMatrix(input.getIntFromConsole()));
+        output.printMatrix(TaskLogic.fillMatrix(input.readIntFromConsole()));
 
     }
 }
