@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class TaskInput {
 
-
     public int readIntFromConsole(){
+        @SuppressWarnings("resources")
         Scanner scanner = new Scanner(System.in);
         int value;
         while (true) {
@@ -23,6 +23,7 @@ public class TaskInput {
     }
 
     public double readDoubleFromConsole(){
+        @SuppressWarnings("resources")
         Scanner scanner = new Scanner(System.in);
         double value;
         while (true) {
